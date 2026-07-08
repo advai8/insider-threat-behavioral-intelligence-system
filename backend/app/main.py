@@ -1,0 +1,18 @@
+from fastapi import FastAPI
+
+from app.routes.home import router as home_router
+from app.database.database import Base, engine
+
+# Import all models
+import app.database.base
+
+# Create database tables
+Base.metadata.create_all(bind=engine)
+
+app = FastAPI(
+    title="Insider Threat Behavioral Intelligence System",
+    description="AI-powered Insider Threat Detection API",
+    version="1.0.0"
+)
+
+app.include_router(home_router)
