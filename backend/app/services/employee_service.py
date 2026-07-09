@@ -9,6 +9,7 @@ def create_employee(db: Session, employee: EmployeeCreate):
         full_name=employee.full_name,
         email=employee.email,
         password=employee.password
+        role=employee.role
     )
 
     db.add(db_employee)
