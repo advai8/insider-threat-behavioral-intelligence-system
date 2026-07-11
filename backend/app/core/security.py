@@ -1,8 +1,10 @@
 from datetime import datetime, timedelta
 from typing import Optional
 
-from jose import jwt
+from jose import jwt, JWTError
 from passlib.context import CryptContext
+from fastapi import Depends, HTTPException, status
+from fastapi.security import OAuth2PasswordBearer
 
 # Password hashing
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
@@ -12,6 +14,8 @@ SECRET_KEY = "your_super_secret_key_change_this_later"
 ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES = 60
 
+# OAuth2 scheme
+oauth2_scheme = OAuth2PasswordBearer(tokenUrl="/auth/login")
 
 def hash_password(password: str):
     return pwd_context.hash(password)

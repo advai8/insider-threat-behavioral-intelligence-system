@@ -216,3 +216,16 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Frontend
+frontend/node_modules/
+
+# VS Code
+.vscode/
+
+# Local database (optional)
+backend/insider_threat.db
+
+# Ignore CERT Dataset
+datasets/cert/*
+!datasets/cert/.gitkeep
