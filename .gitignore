@@ -226,6 +226,8 @@ frontend/node_modules/
 # Local database (optional)
 backend/insider_threat.db
 
-# Ignore CERT Dataset
-datasets/cert/*
+# Ignore all dataset contents
+datasets/**
+!datasets/README.md
+!datasets/cert/
 !datasets/cert/.gitkeep
