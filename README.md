@@ -1,6 +1,16 @@
-# Insider Threat Behavioral Intelligence System
+# 🛡️ AI Insider Threat Behavioral Intelligence System
 
-## Overview
+> AI-powered cybersecurity platform for detecting insider threats using behavioral analytics, machine learning, and real-time monitoring.
+
+![Status](https://img.shields.io/badge/Status-Active-success)
+![Python](https://img.shields.io/badge/Python-3.11-blue)
+![FastAPI](https://img.shields.io/badge/FastAPI-Framework-009688)
+![React](https://img.shields.io/badge/React-Frontend-61DAFB)
+![License](https://img.shields.io/badge/License-MIT-green)
+
+---
+
+## 📌 Overview
 
 The Insider Threat Behavioral Intelligence System is an AI-powered cybersecurity platform that detects insider threats by analyzing employee behavioral patterns, login history, device usage, file access, email activity, and web browsing activity.
 
